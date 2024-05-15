@@ -1,0 +1,42 @@
+/* Styles for TableView */
+.table-view {
+    -fx-background-color: white;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f0f0f0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8f8f8;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Styles for buttons */
+.main-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+.main-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.main-button:pressed {
+    -fx-background-color: #388e3c;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.HomePageController">
+
+    <!-- External stylesheet -->
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+    <!-- Top region containing the title -->
+    <top>
+        <VBox alignment="CENTER">
+            <Label text="Amazoo.com" styleClass="title-text"/>
+        </VBox>
+    </top>
+
+    <!-- Center region containing buttons -->
+    <center>
+        <VBox alignment="CENTER_LEFT" spacing="20" BorderPane.alignment="CENTER">
+            <!-- Padding for spacing -->
+            <padding>
+                <Insets top="50" right="50" bottom="50" left="50"/>
+            </padding>
+            <!-- Button for navigating to Customers -->
+            <Button text="Customers" onAction="#showCustomers" styleClass="main-button"/>
+            <!-- Button for navigating to Products -->
+            <Button text="Products" onAction="#showProducts" styleClass="main-button"/>
+            <!-- Button for navigating to Orders -->
+            <Button text="Orders" onAction="#showOrders" styleClass="main-button"/>
+            <!-- Button for navigating to Bills -->
+            <Button text="Bills" onAction="#showBills" styleClass="main-button"/>
+        </VBox>
+    </center>
+</BorderPane>

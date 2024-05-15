@@ -1,0 +1,22 @@
+/* Modern TableView style */
+.modern-table {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #ccc;
+}
+
+/* Modern Button style */
+.modern-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+}
+
+.modern-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.modern-button:pressed {
+    -fx-background-color: #388e3c;
+}

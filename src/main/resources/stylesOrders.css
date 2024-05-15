@@ -1,0 +1,43 @@
+/* styles.css */
+
+/* Button styling */
+.main-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+}
+
+.main-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.main-button:pressed {
+    -fx-background-color: #388e3c;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: #f0f0f0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #4CAF50;
+}
+
+.table-view .column-header {
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f0f0f0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #b2dfdb;
+}

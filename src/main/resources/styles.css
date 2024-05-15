@@ -1,0 +1,23 @@
+.title-text {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.main-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-color: transparent;
+}
+
+.main-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.main-button:pressed {
+    -fx-background-color: #388e3c;
+}
+

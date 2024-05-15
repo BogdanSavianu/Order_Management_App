@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.controller.CustomersController"
+            stylesheets="stylesCustomers.css">
+
+    <!-- Center region containing a VBox with a styled TableView and buttons -->
+    <center>
+        <VBox spacing="10">
+            <!-- TableView -->
+            <TableView fx:id="tableView" styleClass="modern-table">
+                <!-- Table columns -->
+                <columns>
+                    <TableColumn text="ID" fx:id="idColumn" prefWidth="50">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="id"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Name" fx:id="nameColumn" prefWidth="150">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="name"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Email" fx:id="emailColumn" prefWidth="200">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="email"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Address" fx:id="addressColumn" prefWidth="150">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="address"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Age" fx:id="ageColumn" prefWidth="150">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="age"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+
+            <!-- Buttons -->
+            <HBox alignment="CENTER" spacing="10">
+                <!-- Add Customer button -->
+                <Button text="Add Customer" onAction="#handleAddCustomer" styleClass="modern-button"/>
+                <!-- Update Customer button -->
+                <Button text="Update Customer" onAction="#handleUpdateCustomer" styleClass="modern-button"/>
+                <!-- Delete Customer button -->
+                <Button text="Delete Customer" onAction="#handleDeleteCustomer" styleClass="modern-button"/>
+            </HBox>
+        </VBox>
+    </center>
+
+    <!-- Padding for spacing -->
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+</BorderPane>
